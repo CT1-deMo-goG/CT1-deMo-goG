@@ -1,3 +1,4 @@
+[🇹🇭 อ่านเวอร์ชันภาษาไทย (Thai Version)](README_TH.md)
 # Chonmapoohm Thamsuwan (CTSuwan)
 **Independent Operations Research Developer & Algorithm Architect**
 
