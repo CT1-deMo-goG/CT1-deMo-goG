@@ -1,16 +1,43 @@
-## Hi there 👋
+# Chonmapoohm Thamsuwan (CTSuwan)
+**Independent Operations Research Developer & Algorithm Architect**
 
-<!--
-**CT1-deMo-goG/CT1-deMo-goG** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Welcome to the central hub of the **GSL Engine**—a proprietary, deterministic, high-performance optimization architecture for complex Vehicle Routing Problems (VRP). 
 
-Here are some ideas to get you started:
+🔥 **The Mobile Execution Proof:** Unlike traditional operations research that relies on heavy servers, **the entire GSL architecture was developed, benchmarked, and executed natively on Mobile Architecture (Snapdragon processor via Python/Pydroid 3).** Through strict deterministic constraints and a **Zero-Tuning Policy**, the GSL Engine handles everything from extreme-scale academic benchmarks to real-world commercial datasets in sub-seconds.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+## 🚀 The GSL Engine Portfolio (Routing Architecture)
+Select a module below to view the full benchmark reports, execution proofs, and technical documents.
+
+### 📦 1. Capacitated VRP (CVRP) Module
+* **Scope:** Core capacity constraints. 
+* **Achievement:** Solved an unprecedented **10,000+ complex instances across 15 standard academic datasets (Set A to XML)**. Also includes extreme-scale stress testing on the massive Uchoa Set XL, achieving 100% deterministic feasibility across all tests.
+* 🔗 **[View Comprehensive CVRP Repository (15 Datasets)](https://github.com/CT1-deMo-goG/gsl-routing-engine)**
+* 🔗 **[View Extreme-Scale CVRP (Set XL) Repository](https://github.com/CT1-deMo-goG/GSL-Engine-SetXL-Benchmark)**
+
+### ⏱️ 2. VRP with Time Windows (VRPTW) Module
+* **Scope:** Integrated strict chronological feasibility gates. 
+* **Achievement:** Dominated Solomon (100 nodes) and Homberger (200 - 1,000 nodes) benchmarks with absolute time-window adherence.
+* 🔗 **[View VRPTW Repository](https://github.com/CT1-deMo-goG/GSL-Axiomatic-TW-Portfolio)**
+
+### 🏢 3. Multi-Depot VRP (MDVRP) Module
+* **Scope:** Multi-origin clustering and routing.
+* **Highlight:** Executed an extreme-scale stress test of **10,000 Nodes and 100 Depots** in just **8.9 seconds** on a mobile processor.
+* 🔗 **[View MDVRP Repository](https://github.com/CT1-deMo-goG/gsl_mdvrp_engine)**
+
+### 🌍 4. Real-World MDVRPTW Module (The Masterpiece)
+* **Scope:** Multi-Depot, Strict Time Windows, 2D-Capacity (Weight/Volume), and Asymmetric Distances (One-Way Streets).
+* **Commercial Impact:** Tested against a real-world logistics dataset from Bosnia & Herzegovina. **Reduced the company's legacy routing cost by 31.4% (saved 169.08 KM) in just 0.0078 seconds.**
+* 🔗 **[View MDVRPTW Repository](https://github.com/CT1-deMo-goG/gsl-mdvrptw-engine)**
+
+---
+
+## 💼 Commercial Application & Consulting
+The GSL architecture is highly scalable and ready for commercial API deployment, real-time dispatch systems, and industrial logistics optimization.
+
+* 📧 **Email:** ctsuwan@proton.me
+* 💼 **Upwork:** [CTSuwan Profile](https://www.upwork.com/freelancers/~0173b4a58a1a327fd6?mp_source=share)
+
+*"Solving extreme-scale logistics natively from the palm of a hand."*
+
