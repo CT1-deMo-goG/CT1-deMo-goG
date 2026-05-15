@@ -15,7 +15,7 @@ Select a module below to view the full benchmark reports, execution proofs, and 
 * **Scope:** Core capacity constraints. 
 * **Achievement:** Solved an unprecedented **10,000+ complex instances across 15 standard academic datasets (Set A to XML)**. Also includes extreme-scale stress testing on the massive Uchoa Set XL, achieving 100% deterministic feasibility across all tests.
 * 🔗 **[View Comprehensive CVRP Repository (15 Datasets)](https://github.com/CT1-deMo-goG/gsl-routing-engine)**
-* 🔗 **[View Extreme-Scale CVRP (Set XL) Repository](https://github.com/CT1-deMo-goG/GSL-Engine-SetXL-Benchmark)**
+* 🔗 **[View Extreme-Scale CVRP (Set XL) Repository](https://github.com/CT1-deMo-goG/GSL-CVRP-SETXL)**
 
 ### ⏱️ 2. VRP with Time Windows (VRPTW) Module
 * **Scope:** Integrated strict chronological feasibility gates. 
