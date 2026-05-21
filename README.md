@@ -46,8 +46,7 @@ Exploratory whitepaper discussing:
 - variance-free routing behavior,
 - and mobile-scale logistics execution.
 
-📄 See:
-`Docs/deterministic_single_pass_whitepaper.md`
+📄 [Read the Whitepaper](./Docs/deterministic_single_pass_whitepaper.md)
 
 ---
 
