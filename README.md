@@ -21,7 +21,7 @@ Select a module below to view the full benchmark reports, execution proofs, and 
 ### ⏱️ 2. VRP with Time Windows (VRPTW) Module
 * **Scope:** Integrated strict chronological feasibility gates. 
 * **Achievement:** Evaluated on Solomon and Homberger benchmark families with verified deterministic feasibility and stable runtime behavior.
-* 🔗 **[View VRPTW Repository](https://github.com/CT1-deMo-goG/GSL-Axiomatic-TW-Portfolio)**
+* 🔗 **[View VRPTW Repository](https://github.com/CT1-deMo-goG/GSL-VRPTW-Portfolio)**
 
 ### 🏢 3. Multi-Depot VRP (MDVRP) Module
 * **Scope:** Multi-origin clustering and routing.
