@@ -1,4 +1,5 @@
 [🇹🇭 อ่านเวอร์ชันภาษาไทย (Thai Version)](README_TH.md)
+
 # Chonmapoohm Thamsuwan (CTSuwan)
 **Independent Operations Research Developer & Algorithm Architect**
 
@@ -13,13 +14,13 @@ Select a module below to view the full benchmark reports, execution proofs, and 
 
 ### 📦 1. Capacitated VRP (CVRP) Module
 * **Scope:** Core capacity constraints. 
-* **Achievement:** Solved an unprecedented **10,000+ complex instances across 15 standard academic datasets (Set A to XML)**. Also includes extreme-scale stress testing on the massive Uchoa Set XL, achieving 100% deterministic feasibility across all tests.
+* **Achievement:** Large-scale benchmark coverage across multiple standardized dataset families, including Set A through XML and extreme-scale Uchoa Set XL stress testing.
 * 🔗 **[View Comprehensive CVRP Repository (15 Datasets)](https://github.com/CT1-deMo-goG/gsl-routing-engine)**
 * 🔗 **[View Extreme-Scale CVRP (Set XL) Repository](https://github.com/CT1-deMo-goG/GSL-CVRP-SETXL)**
 
 ### ⏱️ 2. VRP with Time Windows (VRPTW) Module
 * **Scope:** Integrated strict chronological feasibility gates. 
-* **Achievement:** Dominated Solomon (100 nodes) and Homberger (200 - 1,000 nodes) benchmarks with absolute time-window adherence.
+* **Achievement:** Evaluated on Solomon and Homberger benchmark families with verified deterministic feasibility and stable runtime behavior.
 * 🔗 **[View VRPTW Repository](https://github.com/CT1-deMo-goG/GSL-Axiomatic-TW-Portfolio)**
 
 ### 🏢 3. Multi-Depot VRP (MDVRP) Module
@@ -27,20 +28,43 @@ Select a module below to view the full benchmark reports, execution proofs, and 
 * **Highlight:** Executed an extreme-scale stress test of **10,000 Nodes and 100 Depots** in just **8.9 seconds** on a mobile processor.
 * 🔗 **[View MDVRP Repository](https://github.com/CT1-deMo-goG/gsl_mdvrp_engine)**
 
-### 🌍 4. Real-World MDVRPTW Module (The Masterpiece)
+### 🌍 4. Real-World MDVRPTW Module
 * **Scope:** Multi-Depot, Strict Time Windows, 2D-Capacity (Weight/Volume), and Asymmetric Distances (One-Way Streets).
-* **Commercial Impact:** Tested against a real-world logistics dataset from Bosnia & Herzegovina. **Reduced the company's legacy routing cost by 31.4% (saved 169.08 KM) in just 0.0078 seconds.**
+* **Commercial Evaluation:** Tested against a real-world logistics dataset from Bosnia & Herzegovina under deterministic execution constraints.
 * 🔗 **[View MDVRPTW Repository](https://github.com/CT1-deMo-goG/gsl-mdvrptw-engine)**
 
 ---
 
+## 📘 Research & Architecture Notes
+
+### Deterministic Single-Pass Routing Architecture
+
+Exploratory whitepaper discussing:
+- deterministic routing execution,
+- low-latency dispatch systems,
+- edge-constrained VRP computation,
+- variance-free routing behavior,
+- and mobile-scale logistics execution.
+
+📄 See:
+`Docs/deterministic_single_pass_whitepaper.md`
+
+---
+
 ## 💼 Commercial Application & Consulting
-The GSL architecture is highly scalable and ready for commercial API deployment, real-time dispatch systems, and industrial logistics optimization.
+
+The GSL architecture is designed for scalable logistics deployment scenarios, including:
+- real-time dispatch systems,
+- logistics APIs,
+- edge-compute routing,
+- and industrial optimization environments.
+
+---
 
 ## GSL-Solver Platform
 
-**The Enterprise Route Optimization Portal**
-Access the production-ready deterministic engine here:  
+**The Enterprise Route Optimization Portal**  
+Access the deterministic routing platform here:  
 [**https://gsl-solver.com**](https://gsl-solver.com)
 
 ---
@@ -48,7 +72,7 @@ Access the production-ready deterministic engine here:
 ## Professional Contact
 
 **Independent Researcher:** Chonmapoohm Thamsuwan (CTSuwan)  
-**Email:** [ctsuwan@proton.me](mailto:ctsuwan@proton.me)  
+**Email:** [ctsuwan@proton.me](mailto:ctsuwan@proton.me)
 
 ---
 
@@ -59,5 +83,4 @@ Open to professional engagement in the following areas:
 - **Logistics-as-a-Service (LaaS):** Real-time route optimization for enterprise fleets.
 - **High-Precision Modeling:** Custom algorithmic solutions for complex supply chain constraints.
 - **Technical Consultancy:** Large-scale network stress-testing and optimization audits.
-- 
-
+- **Research Collaboration:** Deterministic routing systems and edge-scale optimization research.
