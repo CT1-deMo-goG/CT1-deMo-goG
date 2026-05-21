@@ -1,58 +1,119 @@
+[Read English Version](README.md)
+
 # ชนมภูมิ ธรรมสุวรรณ (CTSuwan)
-**นักพัฒนาและสถาปนิกอัลกอริทึมอิสระ (Operations Research & Algorithm Architect)**
+**นักพัฒนา Operations Research อิสระ และสถาปนิกด้านอัลกอริทึม**
 
-ยินดีต้อนรับสู่ศูนย์กลางของ **GSL Engine** — สถาปัตยกรรมการปรับแต่งเส้นทาง (VRP) ขั้นสูงแบบสัจพจน์ (Deterministic) ที่ออกแบบมาเพื่อแก้ปัญหาลอจิสติกส์ที่ซับซ้อนที่สุดในโลก
+ยินดีต้อนรับสู่ศูนย์กลางของ **GSL Engine** — สถาปัตยกรรมการเพิ่มประสิทธิภาพเชิงกำหนด (Deterministic Optimization Architecture) สำหรับปัญหา Vehicle Routing Problem (VRP) ที่มีความซับซ้อนสูง
 
-🔥 **บทพิสูจน์ขุมพลังบนมือถือ:** ในขณะที่ระบบ Operations Research ทั่วโลกต้องพึ่งพาเซิร์ฟเวอร์ขนาดใหญ่ **สถาปัตยกรรม GSL ทั้งหมดนี้ถูกพัฒนา, ทดสอบ, และประมวลผลบนชิปเซ็ตโทรศัพท์มือถือ (Snapdragon ผ่าน Python/Pydroid 3) 100%** ด้วยการใช้เงื่อนไขแบบสัจพจน์ขั้นเด็ดขาด และนโยบาย **"ไม่ปรับแต่งพารามิเตอร์เพื่อเอาใจโจทย์ (Zero-Tuning Policy)"** GSL Engine สามารถจัดการได้ตั้งแต่โจทย์วิชาการระดับสเกลยักษ์ ไปจนถึงชุดข้อมูลลอจิสติกส์ของโลกจริงได้เสร็จสิ้นภายในระดับเสี้ยววินาที
+จุดมุ่งหมายของโปรเจกต์นี้คือการสำรวจแนวทางการจัดเส้นทางที่เน้น:
+- deterministic execution
+- low-latency routing
+- edge/mobile computation
+- และความเสถียรของผลลัพธ์ภายใต้ข้อจำกัดของฮาร์ดแวร์
 
----
-
-## 🚀 พอร์ตโฟลิโอ GSL Engine (สถาปัตยกรรมการจัดเส้นทาง)
-เลือกโมดูลด้านล่างเพื่อดูรายงานผลการทดสอบ (Benchmark), บทพิสูจน์การประมวลผล, และเอกสารทางเทคนิค
-
-### 📦 1. โมดูล Capacitated VRP (CVRP)
-* **ขอบเขต:** ข้อจำกัดด้านความจุพื้นฐาน
-* **ผลงาน:** ทำลายสถิติโจทย์ที่ซับซ้อนกว่า **10,000 ข้อจาก 15 ชุดข้อมูลมาตรฐานวิชาการ (Set A ถึง XML)** รวมถึงการทดสอบแบบสุดขีดกับชุดข้อมูลขนาดยักษ์ Uchoa Set XL โดยยังคงความถูกต้องของเงื่อนไขแบบ 100%
-* 🔗 **[ดู Repository ของ CVRP (15 ชุดข้อมูล)](https://github.com/CT1-deMo-goG/gsl-routing-engine)**
-* 🔗 **[ดู Repository ของ CVRP สเกลยักษ์ (Set XL)](https://github.com/CT1-deMo-goG/GSL-Engine-SetXL-Benchmark)**
-
-### ⏱️ 2. โมดูล VRP with Time Windows (VRPTW)
-* **ขอบเขต:** ระบบตรวจสอบกรอบเวลาที่เข้มงวด (Chronological Feasibility Gates)
-* **ผลงาน:** พิชิตโจทย์มาตรฐาน Solomon (100 โหนด) และ Homberger (200 - 1,000 โหนด) โดยไม่ละเมิดเงื่อนไขเวลาแม้แต่เสี้ยววินาที
-* 🔗 **[ดู Repository ของ VRPTW](https://github.com/CT1-deMo-goG/GSL-Axiomatic-TW-Portfolio)**
-
-### 🏢 3. โมดูล Multi-Depot VRP (MDVRP)
-* **ขอบเขต:** การจัดเส้นทางและการแบ่งกลุ่มแบบหลายคลังสินค้า
-* **ไฮไลต์:** ประมวลผลโจทย์ระดับวิกฤต **10,000 โหนด และ 100 คลังสินค้า** เสร็จสิ้นในเวลาเพียง **8.9 วินาที** บนชิปเซ็ตมือถือ
-* 🔗 **[ดู Repository ของ MDVRP](https://github.com/CT1-deMo-goG/gsl_mdvrp_engine)**
-
-### 🌍 4. โมดูลโลกจริง MDVRPTW (ผลงานชิ้นเอก / The Masterpiece)
-* **ขอบเขต:** หลายคลังสินค้า, กรอบเวลาเข้มงวด, ความจุ 2 มิติ (น้ำหนักและปริมาตร), และระยะทางไม่สมมาตร (ถนนวันเวย์)
-* **ผลกระทบเชิงพาณิชย์:** ทดสอบกับชุดข้อมูลบริษัทจัดส่งจริงในประเทศบอสเนีย **สามารถลดต้นทุนระยะทางเดิมของบริษัทได้ถึง 31.4% (ประหยัดไป 169.08 กม.) โดยใช้เวลาคิดคำนวณเพียง 0.0078 วินาที**
-* 🔗 **[ดู Repository ของ MDVRPTW โลกจริง](https://github.com/CT1-deMo-goG/gsl-mdvrptw-engine)**
+🔥 **Mobile Execution Proof:**  
+สถาปัตยกรรม GSL ทั้งหมดถูกพัฒนา ทดสอบ และประมวลผลบน Mobile Architecture (Snapdragon processor ผ่าน Python/Pydroid 3) โดยใช้แนวทาง Zero-Tuning และ deterministic feasibility-oriented execution เพื่อศึกษาพฤติกรรมของระบบตั้งแต่ benchmark มาตรฐานไปจนถึงโจทย์ระดับ large-scale และ real-world logistics
 
 ---
 
-## แพลตฟอร์ม GSL-Solver
+# 🚀 GSL Engine Portfolio (Routing Architecture)
 
-**พอร์ทัลอัปติไมซ์เส้นทางระดับองค์กร (Enterprise Route Optimization Portal)**
-เข้าใช้งานเอนจิน Deterministic ระดับโปรดักชันที่พร้อมใช้งานจริงได้ที่นี่:  
-[**https://gsl-solver.com**](https://gsl-solver.com)
+เลือกโมดูลด้านล่างเพื่อดู benchmark, execution logs และเอกสารด้านเทคนิคของแต่ละระบบ
+
+## 📦 1. Capacitated VRP (CVRP) Module
+
+- **ขอบเขต:** ปัญหา VRP ภายใต้ข้อจำกัดด้านความจุรถ
+- **รายละเอียด:** ครอบคลุม benchmark หลายตระกูล ตั้งแต่ Set A ถึง XML รวมถึงการทดสอบ Hyper-Scale บน Uchoa Set XL
+
+🔗 ดู Repository CVRP หลัก:  
+https://github.com/CT1-deMo-goG/gsl-routing-engine
+
+🔗 ดู Repository Hyper-Scale CVRP (Set XL):  
+https://github.com/CT1-deMo-goG/GSL-CVRP-SETXL
 
 ---
 
-## ข้อมูลการติดต่อ
+## ⏱️ 2. VRPTW (Vehicle Routing Problem with Time Windows)
 
-**นักวิจัยอิสระ (Independent Researcher):** ชนมภูมิ ธรรมสุวรรณ (CTSuwan)  
-**อีเมล:** [ctsuwan@proton.me](mailto:ctsuwan@proton.me)  
+- **ขอบเขต:** ระบบจัดเส้นทางภายใต้ข้อจำกัดด้านเวลา
+- **รายละเอียด:** ประเมินบน Solomon และ Homberger benchmark families ภายใต้แนวทาง deterministic execution และ zero-tuning strategy
+
+🔗 ดู VRPTW Repository:  
+https://github.com/CT1-deMo-goG/GSL-VRPTW-Portfolio
 
 ---
 
-## บริการและความร่วมมือทางธุรกิจ
+## 🏢 3. Multi-Depot VRP (MDVRP)
 
-เปิดรับการร่วมงานและให้คำปรึกษาระดับมืออาชีพ ในขอบเขตดังต่อไปนี้:
+- **ขอบเขต:** ระบบจัดเส้นทางแบบหลายศูนย์กระจายสินค้า
+- **รายละเอียด:** ทดสอบบนโจทย์ large-scale รวมถึงกรณี 10,000 nodes / 100 depots บน mobile hardware
 
-- **Logistics-as-a-Service (LaaS):** บริการระบบประมวลผลเส้นทางแบบเรียลไทม์สำหรับฟลีทรถขนส่งระดับองค์กร
-- **High-Precision Modeling:** การออกแบบและพัฒนาอัลกอริทึมเฉพาะทาง สำหรับแก้ปัญหาซัพพลายเชนที่มีเงื่อนไข (Constraints) ซับซ้อนขั้นสูง
-- **Technical Consultancy:** บริการให้คำปรึกษาทางเทคนิค, ทดสอบขีดจำกัดระบบเครือข่ายขนาดใหญ่ (Stress-testing) และการตรวจสอบประเมินประสิทธิภาพการจัดเส้นทาง (Optimization audits)
+🔗 ดู MDVRP Repository:  
+https://github.com/CT1-deMo-goG/gsl_mdvrp_engine
 
+---
+
+## 🌍 4. Real-World MDVRPTW Module
+
+- **ขอบเขต:** Multi-Depot, Time Windows, Asymmetric Distance และ Dual-Capacity Constraints
+- **รายละเอียด:** ประเมินบนชุดข้อมูลโลจิสติกส์จริงภายใต้ deterministic routing execution
+
+🔗 ดู MDVRPTW Repository:  
+https://github.com/CT1-deMo-goG/gsl-mdvrptw-engine
+
+---
+
+# 📘 Research & Architecture Notes
+
+## Deterministic Single-Pass Routing Architecture
+
+Repository นี้ยังรวม exploratory whitepaper และ technical notes เกี่ยวกับ:
+
+- deterministic routing execution
+- low-latency dispatch systems
+- edge-constrained VRP computation
+- variance-free execution behavior
+- mobile-scale logistics optimization
+
+📄 ดูเอกสาร:  
+`Docs/deterministic_single_pass_whitepaper.md`
+
+---
+
+# 💼 Commercial Application & Consulting
+
+GSL Architecture ถูกออกแบบเพื่อสำรวจการประยุกต์ใช้งานในด้าน:
+
+- real-time dispatch systems
+- logistics APIs
+- edge-compute routing
+- industrial optimization environments
+
+---
+
+# GSL-Solver Platform
+
+**Deterministic Routing Platform**
+
+เข้าถึงแพลตฟอร์มได้ที่:  
+https://gsl-solver.com
+
+---
+
+# Professional Contact
+
+**Independent Researcher:** ชนมภูมิ ธรรมสุวรรณ (CTSuwan)
+
+📧 ctsuwan@proton.me
+
+---
+
+# Services & Collaboration
+
+เปิดรับความร่วมมือในด้าน:
+
+- Logistics-as-a-Service (LaaS)
+- ระบบจัดเส้นทางสำหรับองค์กร
+- การออกแบบอัลกอริทึมเฉพาะทาง
+- Large-scale optimization testing
+- งานวิจัยด้าน deterministic routing และ edge-scale optimization
