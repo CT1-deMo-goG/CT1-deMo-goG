@@ -1,119 +1,196 @@
 [Read English Version](README.md)
 
 # ชนมภูมิ ธรรมสุวรรณ (CTSuwan)
-**นักพัฒนา Operations Research อิสระ และสถาปนิกด้านอัลกอริทึม**
 
-ยินดีต้อนรับสู่ศูนย์กลางของ **GSL Engine** — สถาปัตยกรรมการเพิ่มประสิทธิภาพเชิงกำหนด (Deterministic Optimization Architecture) สำหรับปัญหา Vehicle Routing Problem (VRP) ที่มีความซับซ้อนสูง
+**นักวิจัยอิสระด้านปัญญาประดิษฐ์และการเพิ่มประสิทธิภาพ (Independent AI & Optimization Researcher)**
 
-จุดมุ่งหมายของโปรเจกต์นี้คือการสำรวจแนวทางการจัดเส้นทางที่เน้น:
-- deterministic execution
-- low-latency routing
-- edge/mobile computation
-- และความเสถียรของผลลัพธ์ภายใต้ข้อจำกัดของฮาร์ดแวร์
+ยินดีต้อนรับสู่ GitHub ของผม
 
-🔥 **Mobile Execution Proof:**  
-สถาปัตยกรรม GSL ทั้งหมดถูกพัฒนา ทดสอบ และประมวลผลบน Mobile Architecture (Snapdragon processor ผ่าน Python/Pydroid 3) โดยใช้แนวทาง Zero-Tuning และ deterministic feasibility-oriented execution เพื่อศึกษาพฤติกรรมของระบบตั้งแต่ benchmark มาตรฐานไปจนถึงโจทย์ระดับ large-scale และ real-world logistics
+พื้นที่นี้เป็นศูนย์รวมผลงานด้านปัญญาประดิษฐ์ (Artificial Intelligence), การเรียนรู้ของเครื่อง (Machine Learning), การวิจัยดำเนินงาน (Operations Research), อัลกอริทึมเชิงเพิ่มประสิทธิภาพ และการแก้ปัญหา Vehicle Routing Problem (VRP)
+
+GitHub นี้รวบรวมซอฟต์แวร์ งานวิจัย รายงาน Benchmark และผลงานการแข่งขัน Machine Learning ที่สามารถตรวจสอบได้จากแหล่งข้อมูลสาธารณะ
 
 ---
 
-# 🚀 GSL Engine Portfolio (Routing Architecture)
+# สาขางานวิจัย
 
-เลือกโมดูลด้านล่างเพื่อดู benchmark, execution logs และเอกสารด้านเทคนิคของแต่ละระบบ
-
-## 📦 1. Capacitated VRP (CVRP) Module
-
-- **ขอบเขต:** ปัญหา VRP ภายใต้ข้อจำกัดด้านความจุรถ
-- **รายละเอียด:** ครอบคลุม benchmark หลายตระกูล ตั้งแต่ Set A ถึง XML รวมถึงการทดสอบ Hyper-Scale บน Uchoa Set XL
-
-🔗 ดู Repository CVRP หลัก:  
-https://github.com/CT1-deMo-goG/gsl-routing-engine
-
-🔗 ดู Repository Hyper-Scale CVRP (Set XL):  
-https://github.com/CT1-deMo-goG/GSL-CVRP-SETXL
+- ปัญญาประดิษฐ์ (Artificial Intelligence)
+- การเรียนรู้ของเครื่อง (Machine Learning)
+- การวิจัยดำเนินงาน (Operations Research)
+- การวิเคราะห์เพื่อการตัดสินใจ (Decision Analytics)
+- การเพิ่มประสิทธิภาพด้านโลจิสติกส์
+- Vehicle Routing Optimization
+- Deterministic Optimization Algorithms
 
 ---
 
-## ⏱️ 2. VRPTW (Vehicle Routing Problem with Time Windows)
+# AI Research Portfolio
 
-- **ขอบเขต:** ระบบจัดเส้นทางภายใต้ข้อจำกัดด้านเวลา
-- **รายละเอียด:** ประเมินบน Solomon และ Homberger benchmark families ภายใต้แนวทาง deterministic execution และ zero-tuning strategy
+คลังผลงานวิจัยสาธารณะ ประกอบด้วย
 
-🔗 ดู VRPTW Repository:  
-https://github.com/CT1-deMo-goG/GSL-VRPTW-Portfolio
+- ผลงานวิจัย
+- รายงาน Benchmark
+- ซอฟต์แวร์
+- ผลการแข่งขัน Machine Learning
 
----
+🔗
 
-## 🏢 3. Multi-Depot VRP (MDVRP)
-
-- **ขอบเขต:** ระบบจัดเส้นทางแบบหลายศูนย์กระจายสินค้า
-- **รายละเอียด:** ทดสอบบนโจทย์ large-scale รวมถึงกรณี 10,000 nodes / 100 depots บน mobile hardware
-
-🔗 ดู MDVRP Repository:  
-https://github.com/CT1-deMo-goG/gsl_mdvrp_engine
+https://github.com/CT1-deMo-goG/AI-Research-Portfolio
 
 ---
 
-## 🌍 4. Real-World MDVRPTW Module
+# GSL Solver
 
-- **ขอบเขต:** Multi-Depot, Time Windows, Asymmetric Distance และ Dual-Capacity Constraints
-- **รายละเอียด:** ประเมินบนชุดข้อมูลโลจิสติกส์จริงภายใต้ deterministic routing execution
+แพลตฟอร์มเพิ่มประสิทธิภาพเส้นทางขนส่งด้วยอัลกอริทึมเชิงกำหนด (Deterministic Route Optimization)
 
-🔗 ดู MDVRPTW Repository:  
-https://github.com/CT1-deMo-goG/gsl-mdvrptw-engine
+เว็บไซต์
 
----
+🔗
 
-# 📘 Research & Architecture Notes
-
-## Deterministic Single-Pass Routing Architecture
-
-Repository นี้ยังรวม exploratory whitepaper และ technical notes เกี่ยวกับ:
-
-- deterministic routing execution
-- low-latency dispatch systems
-- edge-constrained VRP computation
-- variance-free execution behavior
-- mobile-scale logistics optimization
-
-📄 ดูเอกสาร:  
-`Docs/deterministic_single_pass_whitepaper.md`
-
----
-
-# 💼 Commercial Application & Consulting
-
-GSL Architecture ถูกออกแบบเพื่อสำรวจการประยุกต์ใช้งานในด้าน:
-
-- real-time dispatch systems
-- logistics APIs
-- edge-compute routing
-- industrial optimization environments
-
----
-
-# GSL-Solver Platform
-
-**Deterministic Routing Platform**
-
-เข้าถึงแพลตฟอร์มได้ที่:  
 https://gsl-solver.com
 
 ---
 
-# Professional Contact
+# คลังงานวิจัยด้าน Vehicle Routing
 
-**Independent Researcher:** ชนมภูมิ ธรรมสุวรรณ (CTSuwan)
+## CVRP
 
-📧 ctsuwan@proton.me
+งานวิจัยและ Benchmark สำหรับ Capacitated Vehicle Routing Problem
+
+Repository
+
+https://github.com/CT1-deMo-goG/gsl-routing-engine
+
+Extreme Scale
+
+https://github.com/CT1-deMo-goG/GSL-CVRP-SETXL
 
 ---
 
-# Services & Collaboration
+## VRPTW
 
-เปิดรับความร่วมมือในด้าน:
+Vehicle Routing Problem with Time Windows
 
-- Logistics-as-a-Service (LaaS)
-- ระบบจัดเส้นทางสำหรับองค์กร
-- การออกแบบอัลกอริทึมเฉพาะทาง
-- Large-scale optimization testing
-- งานวิจัยด้าน deterministic routing และ edge-scale optimization
+Repository
+
+https://github.com/CT1-deMo-goG/GSL-VRPTW-Portfolio
+
+---
+
+## MDVRP
+
+Multi-Depot Vehicle Routing Problem
+
+Repository
+
+https://github.com/CT1-deMo-goG/gsl-mdvrp-engine
+
+---
+
+## MDVRPTW
+
+Multi-Depot Vehicle Routing Problem with Time Windows
+
+Repository
+
+https://github.com/CT1-deMo-goG/gsl-mdvrptw-engine
+
+---
+
+# ผลงานการแข่งขัน Machine Learning
+
+ผลงานการแข่งขันบนแพลตฟอร์ม DrivenData
+
+| รายการแข่งขัน | อันดับ |
+|----------------|-------:|
+| Flu Shot Learning | **347 / 8,410** |
+| Conser-vision Practice Area | **479 / 2,177** |
+| Richter's Predictor | **544 / 8,319** |
+| DengAI | **681 / 16,491** |
+| Pump it Up | **1,174 / 18,861** |
+| Children's Speech Recognition (Phonetic Track) | **90 / 394** |
+| Children's Speech Recognition (Word Track) | **140 / 655** |
+
+รวม
+
+**204 Public Submissions**
+
+บน DrivenData
+
+---
+
+# โปรไฟล์วิชาชีพ
+
+AI Research Portfolio
+
+https://github.com/CT1-deMo-goG/AI-Research-Portfolio
+
+GitHub
+
+https://github.com/CT1-deMo-goG
+
+DrivenData
+
+https://www.drivendata.org/users/CT1_deMo/
+
+ORCID
+
+https://orcid.org/0009-0007-5444-2030
+
+LinkedIn
+
+https://www.linkedin.com/in/ctsuwan
+
+GSL Solver
+
+https://gsl-solver.com
+
+---
+
+# โครงการปัจจุบัน
+
+- GSL Solver
+- AI Research Portfolio
+- Vehicle Routing Benchmark Research
+- Machine Learning Competition Portfolio
+- Decision Optimization Research
+
+---
+
+# ความสนใจด้านการวิจัย
+
+- Artificial Intelligence
+- Machine Learning
+- Operations Research
+- Optimization
+- Vehicle Routing Problem
+- Decision Analytics
+- Logistics Systems
+- Benchmark Evaluation
+- Deterministic Algorithms
+
+---
+
+# ความร่วมมือ
+
+ยินดีร่วมงานในด้าน
+
+- งานวิจัยด้าน AI
+- Machine Learning
+- Operations Research
+- Vehicle Routing Problem
+- Logistics Optimization
+- Benchmark Evaluation
+- Technical Consulting
+
+---
+
+# ติดต่อ
+
+**ชนมภูมิ ธรรมสุวรรณ (CTSuwan)**
+
+นักวิจัยอิสระด้าน AI และการเพิ่มประสิทธิภาพ
+
+อีเมล
+
+**ctsuwan@proton.me**
