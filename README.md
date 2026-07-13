@@ -1,85 +1,183 @@
-[🇹🇭 อ่านเวอร์ชันภาษาไทย (Thai Version)](README_TH.md)
+[🇹🇭 Thai Version](README_TH.md)
 
 # Chonmapoohm Thamsuwan (CTSuwan)
-**Independent Operations Research Developer & Algorithm Architect**
 
-Welcome to the central hub of the **GSL Engine**—a proprietary, deterministic, high-performance optimization architecture for complex Vehicle Routing Problems (VRP). 
+**Independent AI & Optimization Researcher**
 
-🔥 **The Mobile Execution Proof:** Unlike traditional operations research that relies on heavy servers, **the entire GSL architecture was developed, benchmarked, and executed natively on Mobile Architecture (Snapdragon processor via Python/Pydroid 3).** Through strict deterministic constraints and a **Zero-Tuning Policy**, the GSL Engine handles everything from extreme-scale academic benchmarks to real-world commercial datasets in sub-seconds.
+Welcome to my GitHub profile.
 
----
-
-## 🚀 The GSL Engine Portfolio (Routing Architecture)
-Select a module below to view the full benchmark reports, execution proofs, and technical documents.
-
-### 📦 1. Capacitated VRP (CVRP) Module
-* **Scope:** Core capacity constraints. 
-* **Achievement:** Large-scale benchmark coverage across multiple standardized dataset families, including Set A through XML and extreme-scale Uchoa Set XL stress testing.
-* 🔗 **[View Comprehensive CVRP Repository (15 Datasets)](https://github.com/CT1-deMo-goG/gsl-routing-engine)**
-* 🔗 **[View Extreme-Scale CVRP (Set XL) Repository](https://github.com/CT1-deMo-goG/GSL-CVRP-SETXL)**
-
-### ⏱️ 2. VRP with Time Windows (VRPTW) Module
-* **Scope:** Integrated strict chronological feasibility gates. 
-* **Achievement:** Evaluated on Solomon and Homberger benchmark families with verified deterministic feasibility and stable runtime behavior.
-* 🔗 **[View VRPTW Repository](https://github.com/CT1-deMo-goG/GSL-VRPTW-Portfolio)**
-
-### 🏢 3. Multi-Depot VRP (MDVRP) Module
-* **Scope:** Multi-origin clustering and routing.
-* **Highlight:** Executed an extreme-scale stress test of **10,000 Nodes and 100 Depots** in just **8.9 seconds** on a mobile processor.
-* 🔗 **[View MDVRP Repository](https://github.com/CT1-deMo-goG/gsl_mdvrp_engine)**
-
-### 🌍 4. Real-World MDVRPTW Module
-* **Scope:** Multi-Depot, Strict Time Windows, 2D-Capacity (Weight/Volume), and Asymmetric Distances (One-Way Streets).
-* **Commercial Evaluation:** Tested against a real-world logistics dataset from Bosnia & Herzegovina under deterministic execution constraints.
-* 🔗 **[View MDVRPTW Repository](https://github.com/CT1-deMo-goG/gsl-mdvrptw-engine)**
+My work focuses on artificial intelligence, machine learning, operations research, deterministic optimization algorithms, and large-scale vehicle routing problems. This GitHub serves as the central hub for my research projects, benchmark repositories, software development, and public machine learning competition portfolio.
 
 ---
 
-## 📘 Research & Architecture Notes
+# Research Areas
 
-### Deterministic Single-Pass Routing Architecture
-
-Exploratory whitepaper discussing:
-- deterministic routing execution,
-- low-latency dispatch systems,
-- edge-constrained VRP computation,
-- variance-free routing behavior,
-- and mobile-scale logistics execution.
-
-📄 [Read the Whitepaper](./Docs/deterministic_single_pass_whitepaper.md)
+- Artificial Intelligence
+- Machine Learning
+- Operations Research
+- Decision Analytics
+- Vehicle Routing Optimization
+- Logistics Optimization
+- Deterministic Optimization Algorithms
 
 ---
 
-## 💼 Commercial Application & Consulting
+# AI Research Portfolio
 
-The GSL architecture is designed for scalable logistics deployment scenarios, including:
-- real-time dispatch systems,
-- logistics APIs,
-- edge-compute routing,
-- and industrial optimization environments.
+Public portfolio containing research activities, benchmark reports, software projects, and machine learning competition results.
+
+🔗 https://github.com/CT1-deMo-goG/AI-Research-Portfolio
 
 ---
 
-## GSL-Solver Platform
+# GSL Solver
 
-**The Enterprise Route Optimization Portal**  
-Access the deterministic routing platform here:  
-[**https://gsl-solver.com**](https://gsl-solver.com)
+Deterministic AI-powered vehicle routing optimization platform.
 
----
+Website
 
-## Professional Contact
-
-**Independent Researcher:** Chonmapoohm Thamsuwan (CTSuwan)  
-**Email:** [ctsuwan@proton.me](mailto:ctsuwan@proton.me)
+🔗 https://gsl-solver.com
 
 ---
 
-## Services & Collaboration
+# Routing Research Repositories
 
-Open to professional engagement in the following areas:
+### CVRP
 
-- **Logistics-as-a-Service (LaaS):** Real-time route optimization for enterprise fleets.
-- **High-Precision Modeling:** Custom algorithmic solutions for complex supply chain constraints.
-- **Technical Consultancy:** Large-scale network stress-testing and optimization audits.
-- **Research Collaboration:** Deterministic routing systems and edge-scale optimization research.
+Large-scale benchmark evaluation across multiple standardized datasets.
+
+Repository
+
+🔗 https://github.com/CT1-deMo-goG/gsl-routing-engine
+
+Extreme Scale
+
+🔗 https://github.com/CT1-deMo-goG/GSL-CVRP-SETXL
+
+---
+
+### VRPTW
+
+Deterministic Vehicle Routing with Time Windows.
+
+Repository
+
+🔗 https://github.com/CT1-deMo-goG/GSL-VRPTW-Portfolio
+
+---
+
+### MDVRP
+
+Multi-Depot Vehicle Routing Problem.
+
+Repository
+
+🔗 https://github.com/CT1-deMo-goG/gsl-mdvrp-engine
+
+---
+
+### MDVRPTW
+
+Multi-Depot Vehicle Routing Problem with Time Windows.
+
+Repository
+
+🔗 https://github.com/CT1-deMo-goG/gsl-mdvrptw-engine
+
+---
+
+# Machine Learning Competition Portfolio
+
+Public competition history on DrivenData.
+
+Highlights
+
+| Competition | Rank | Participants |
+|-------------|------:|------------:|
+| Flu Shot Learning | **347** | 8,410 |
+| Conser-vision Practice Area | **479** | 2,177 |
+| Richter's Predictor | **544** | 8,319 |
+| DengAI | **681** | 16,491 |
+| Pump it Up | **1,174** | 18,861 |
+| Children's Speech Recognition (Phonetic Track) | **90** | 394 |
+| Children's Speech Recognition (Word Track) | **140** | 655 |
+
+**204 Public Submissions on DrivenData**
+
+---
+
+# Professional Profiles
+
+### AI Research Portfolio
+
+https://github.com/CT1-deMo-goG/AI-Research-Portfolio
+
+### GitHub
+
+https://github.com/CT1-deMo-goG
+
+### DrivenData
+
+https://www.drivendata.org/users/CT1_deMo/
+
+### ORCID
+
+https://orcid.org/0009-0007-5444-2030
+
+### LinkedIn
+
+https://www.linkedin.com/in/ctsuwan
+
+### GSL Solver
+
+https://gsl-solver.com
+
+---
+
+# Current Projects
+
+- GSL Solver
+- AI Research Portfolio
+- Vehicle Routing Benchmark Research
+- Machine Learning Competition Portfolio
+- Decision Optimization Research
+
+---
+
+# Research Interests
+
+- Artificial Intelligence
+- Machine Learning
+- Operations Research
+- Optimization
+- Vehicle Routing Problems
+- Decision Analytics
+- Logistics Systems
+- Benchmark Evaluation
+- Deterministic Algorithms
+
+---
+
+# Collaboration
+
+Open to collaboration in
+
+- Artificial Intelligence Research
+- Machine Learning
+- Operations Research
+- Logistics Optimization
+- Vehicle Routing Problems
+- Benchmark Evaluation
+- Technical Consulting
+
+---
+
+# Contact
+
+**Chonmapoohm Thamsuwan (CTSuwan)**
+
+Independent AI & Optimization Researcher
+
+Email
+
+**ctsuwan@proton.me**
